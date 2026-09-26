@@ -1,0 +1,22 @@
+# Raw dataset — large, redistribution-restricted; see README for the download link
+data/raw/*.xlsx
+data/raw/*.csv
+
+# Processed transaction-level data — large (~70MB), fully reproducible via
+# python/data_cleaning.py, so not committed. The small, portfolio-relevant
+# outputs (customer_rfm.csv, customer_segments.csv, charts/) ARE committed.
+data/processed/*.csv
+
+# SQLite database file — large, rebuilt in seconds from the SQL scripts
+outputs/*.db
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
